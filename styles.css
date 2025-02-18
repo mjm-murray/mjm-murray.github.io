@@ -82,6 +82,7 @@ section:last-child {
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
