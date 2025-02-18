@@ -35,6 +35,17 @@ header {
   text-align: center;
 }
 
+header .headshot {
+  margin-bottom: 20px;
+}
+
+header .headshot img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #4CAF50;
+}
+
 header h1 {
   margin: 0;
   font-size: 2.5rem;
