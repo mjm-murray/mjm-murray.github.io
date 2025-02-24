@@ -1,102 +1,94 @@
-sr/* General Styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #1a1a1a;
-  color: #e0e0e0;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Murray - Career Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">Michael Murray</a>
+      <ul class="nav-links">
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#manufacturing">Manufacturing</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#about_me">About Me</a></li>
+      </ul>
+    </div>
+  </nav>
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="headshot">
+        <img src="headshot.jpg" alt="Michael Murray Headshot">
+      </div>
+      <h1>Michael Murray</h1>
+      <p>Senior Mechanical Design Engineer | Product Development | DFM | FEA</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/michaeljohnmurray" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:mjm.murray@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
 
-h1, h2, h3 {
-  color: #4CAF50; /* Light green */
-}
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <div class="container">
+      <h2>Resume</h2>
+      <p>View my resume to learn more about my experience and skills.</p>
+      <a href="https://drive.google.com/file/d/1nG3IIuAYZBP7SgViT5ZBQX6fzvROylxK/view?usp=drive_link" target="_blank" class="btn">View Resume (PDF)</a>
+    </div>
+  </section>
 
-a {
-  color: #4CAF50;
-  text-decoration: none;
-}
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Design Portfolio</h2>
+      <p>Explore my design projects and engineering work.</p>
+      <a href="https://drive.google.com/file/d/17lLcvfRb7d1EhqGvw98dgR5ccCyfmGfm/view?usp=drive_link" target="_blank" class="btn">View Design Portfolio (PDF)</a>
+    </div>
+  </section>
 
-a:hover {
-  text-decoration: underline;
-}
+  <!-- Manufacturing Section -->
+  <section id="manufacturing" class="section">
+    <div class="container">
+      <h2>Manufacturing Experience</h2>
+      <p>Learn about my hands-on experience with manufacturing processes.</p>
+      <a href="https://drive.google.com/file/d/12J-qH_nqqBql6uo4IRq1XpwI6VTKBP65/view?usp=drive_link" target="_blank" class="btn">View Manufacturing Experience (PDF)</a>
+    </div>
+  </section>
 
-/* Header */
-header {
-  background-color: #262626;
-  padding: 20px 0;
-  text-align: center;
-}
+  <!-- Timeline Section -->
+  <section id="timeline" class="section">
+    <div class="container">
+      <h2>Career Timeline</h2>
+      <p>An explanation of my career transitions and job changes.</p>
+      <a href="https://drive.google.com/file/d/1YVyiOaXk8iMGD0mdq6ErUgGQNjpGlQfr/view?usp=drive_link" target="_blank" class="btn">View Career Timeline (PDF)</a>
+    </div>
+  </section>
 
-header .headshot {
-  margin-bottom: 20px;
-}
+  <!-- About Me Section -->
+  <section id="about_me" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>A brief summary of my professional journey and my life.</p>
+      <a href="https://drive.google.com/file/d/1azSLsB5ZTvRn0ebPPzHGYqKdZOi5MSta/view?usp=drive_link" target="_blank" class="btn">View Bio (PDF)</a>
+    </div>
+  </section>
 
-header .headshot img {
-  width: 150px; /* Adjust this value as needed */
-  height: 191px; /* 150px * 1.275 (aspect ratio of 24.83x31.67) */
-  border: 3px solid #4CAF50; /* Optional: Add a border */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  margin: 10px 0 0;
-  font-size: 1.2rem;
-}
-
-header nav {
-  margin-top: 20px;
-}
-
-header nav a {
-  margin: 0 15px;
-  font-size: 1.1rem;
-}
-
-/* Sections */
-section {
-  padding: 40px 0;
-  border-bottom: 1px solid #333;
-}
-
-section:last-child {
-  border-bottom: none;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #45a049;
-}
-
-/* Footer */
-footer {
-  background-color: #262626;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 40px;
-}
-
-footer p {
-  margin: 5px 0;
-}
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact me: <a href="mailto:mjm.murray@gmail.com">mjm.murray@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/michaeljohnmurray" target="_blank">linkedin.com/in/michaeljohnmurray</a></p>
+    </div>
+  </footer>
+</body>
+</html>
