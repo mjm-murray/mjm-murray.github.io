@@ -40,10 +40,10 @@ header .headshot {
 }
 
 header .headshot img {
-  width: 150px; /* Adjust this value as needed */
-  height: 191px; /* 150px * 1.275 (aspect ratio of 24.83x31.67) */
-  border: 3px solid #4CAF50; /* Optional: Add a border */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 150px;
+  height: 191px;
+  border: 3px solid #4CAF50;
+  object-fit: cover;
 }
 
 header h1 {
