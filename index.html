@@ -3,65 +3,424 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michael Murray - Career Portfolio</title>
+  <meta name="description" content="Michael Murray — Senior Mechanical Design Engineer. 15+ years in product development, DFM, FEA, and design from concept through production.">
+  <title>Michael Murray — Senior Mechanical Design Engineer</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <!-- Headshot Section -->
-      <div class="headshot">
-        <img src="headshot.jpg" alt="Michael Murray Headshot">
+
+  <!-- Sticky Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">
+        <span class="brand-mark">MM</span>
+        <span class="brand-text">Michael Murray</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#documents">Documents</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
-      <h1>Michael Murray</h1>
-      <p>Senior Mechanical Design Engineer | Product Development | DFM | FEA</p>
-      <nav>
-        <a href="#resume">Resume</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#manufacturing">Manufacturing</a>
-        <a href="#timeline">Career Timeline</a>
-        <a href="#about_me">About Me</a> 
-      </nav>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          <span>Senior Mechanical Design Engineer</span>
+        </div>
+        <h1>Michael Murray</h1>
+        <p class="hero-lede">
+          15+ years taking products from concept through production —
+          medical devices, industrial power, and automation. Three U.S. patents.
+          Hands-on with DFM, FEA, GD&amp;T, and rapid prototyping.
+        </p>
+        <div class="hero-meta">
+          <span><i class="fa-solid fa-location-dot"></i> San Francisco, CA</span>
+          <span><i class="fa-solid fa-briefcase"></i> Nevados Engineering</span>
+          <span><i class="fa-solid fa-graduation-cap"></i> BSME, NC State (Cum Laude)</span>
+        </div>
+        <div class="hero-cta">
+          <a href="Resume-Michael_Murray.pdf" target="_blank" class="btn btn-primary">
+            <i class="fa-solid fa-file-lines"></i> View Resume
+          </a>
+          <a href="Design_Portfolio-Michael_Murray.pdf" target="_blank" class="btn btn-ghost">
+            <i class="fa-solid fa-folder-open"></i> Design Portfolio
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="headshot-final.jpg" alt="Michael Murray">
+        </div>
+      </div>
     </div>
   </header>
 
-  <section id="resume" class="container">
-    <h2>Resume</h2>
-    <p>View my resume to learn more about my experience and skills.</p>
-    <a href="https://drive.google.com/file/d/1nG3IIuAYZBP7SgViT5ZBQX6fzvROylxK/view?usp=drive_link" target="_blank" class="btn">View Resume (PDF)</a>
-  </section>
+  <main>
 
-  <section id="portfolio" class="container">
-    <h2>Design Portfolio</h2>
-    <p>Explore my design projects and engineering work.</p>
-    <a href="https://drive.google.com/file/d/17lLcvfRb7d1EhqGvw98dgR5ccCyfmGfm/view?usp=drive_link" target="_blank" class="btn">View Design Portfolio (PDF)</a>
-  </section>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h2>About</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-prose">
+            <p>
+              I'm a tinkerer at heart — raised in my dad's shop and running a handyman LLC by high school.
+              That hands-on instinct still drives how I work: I treat design for manufacturing as paramount,
+              because a design is only as good as the process that can produce it.
+            </p>
+            <p>
+              I've led teams to deliver groundbreaking hardware — a 3D x-ray positioning system,
+              a robotic neurosurgical microscope, a pump-to-catheter device for arterial calcified lesions,
+              and a remotely operated racking device for medium-voltage circuit breakers.
+              Across medical, power, automation, and consumer products, I balance creativity with
+              the practical realities of FDA, IEC 60601, ISO 13485, and ANSI/ISO compliance.
+            </p>
+            <p>
+              When I'm not at the bench, you'll find me with my 3D printers,
+              hiking the California hills, writing and producing music,
+              or chasing the next stand-up open mic.
+            </p>
+          </div>
+          <aside class="about-stats">
+            <div class="stat">
+              <div class="stat-num">15<span>+</span></div>
+              <div class="stat-label">Years of experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">3</div>
+              <div class="stat-label">U.S. Patents</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">9</div>
+              <div class="stat-label">Companies / industries</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">510<span>(k)</span></div>
+              <div class="stat-label">Co-author, FDA submission</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-  <section id="manufacturing" class="container">
-    <h2>Manufacturing Experience</h2>
-    <p>Learn about my hands-on experience with manufacturing processes.</p>
-    <a href="https://drive.google.com/file/d/12J-qH_nqqBql6uo4IRq1XpwI6VTKBP65/view?usp=drive_link" target="_blank" class="btn">View Manufacturing Experience (PDF)</a>
-  </section>
+    <!-- Featured Work -->
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2>Featured Work</h2>
+          <p class="section-sub">Selected projects from 15 years of design engineering. Click any card to jump to its page in the <a href="Design_Portfolio-Michael_Murray.pdf" target="_blank">design portfolio</a>.</p>
+        </div>
 
-  <section id="timeline" class="container">
-    <h2>Career Timeline</h2>
-    <p>An explanation of my career transitions and job changes.</p>
-    <a href="https://drive.google.com/file/d/1YVyiOaXk8iMGD0mdq6ErUgGQNjpGlQfr/view?usp=drive_link" target="_blank" class="btn">View Career Timeline (PDF)</a>
-  </section>
+        <div class="work-grid">
 
-  <section id="about_me" class="container">
-    <h2>About Me</h2>
-    <p>A brief summary of my professional journey and my life.</p>
-    <a href="https://drive.google.com/file/d/1azSLsB5ZTvRn0ebPPzHGYqKdZOi5MSta/view?usp=drive_link" target="_blank" class="btn">View Bio (PDF)</a>
-  </section>
+          <a class="work-card" href="Design_Portfolio-Michael_Murray.pdf#page=4" target="_blank" rel="noopener" aria-label="3D Dental X-Ray Positioning System — view in design portfolio (PDF page 4)">
+            <div class="work-media">
+              <img src="images/xray.png" alt="3D dental X-ray positioning arm — CAD render" loading="lazy">
+            </div>
+            <div class="work-icon"><i class="fa-solid fa-x-ray"></i></div>
+            <h3>3D Dental X-Ray Positioning System</h3>
+            <p>Sole mechanical design engineer for a multi-DOF positioning arm delivering CT-quality imaging (later adapted for tomosynthesis). Designed a tuned die-spring suspension and built a force-balance calculator to keep the arm static at any angle without a brake.</p>
+            <div class="work-tags">
+              <span>Medical · FDA / IEC</span>
+              <span>SOLIDWORKS</span>
+              <span>Mechanism design</span>
+            </div>
+          </a>
 
-  <footer>
-    <div class="container">
-      <p>Contact me: <a href="mailto:mjm.murray@gmail.com">mjm.murray@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/michaeljohnmurray" target="_blank">linkedin.com/in/michaeljohnmurray</a></p>
+          <a class="work-card" href="Design_Portfolio-Michael_Murray.pdf#page=6" target="_blank" rel="noopener" aria-label="Surgical 3D Robotic Microscope — view in design portfolio (PDF page 6)">
+            <div class="work-media">
+              <img src="images/microscope.png" alt="Surgical 3D robotic microscope cart with cobot arm and displays" loading="lazy">
+            </div>
+            <div class="work-icon"><i class="fa-solid fa-microscope"></i></div>
+            <h3>Surgical 3D Robotic Microscope</h3>
+            <p>Designed mechanical subsystems for a robotic neurosurgical microscope. Ran static FEA on the assembled frame (including fasteners) and modal analysis on the cantilevered display arm to verify safety factors per IEC 60601. Co-authored the 510(k) submission.</p>
+            <div class="work-tags">
+              <span>Medical · 510(k)</span>
+              <span>FEA + Modal</span>
+              <span>SOLIDWORKS Simulation</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="Design_Portfolio-Michael_Murray.pdf#page=8" target="_blank" rel="noopener" aria-label="Diaphragm Pump Catheter Device — view in design portfolio (PDF page 8)">
+            <div class="work-media">
+              <img src="images/catheter.png" alt="Diaphragm pump catheter device — servo-driven pump assembly" loading="lazy">
+            </div>
+            <div class="work-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3>Diaphragm Pump Catheter Device</h3>
+            <p>Proof of concept through prototype for a balloon catheter that pulsates to remove intravascular calcified lesions. ~1 Nm of torque drives 5.5 kN of chamber force via servo-controlled diaphragm pump. Designed, machined (CAM + CNC), molded, and tested end-to-end.</p>
+            <div class="work-tags">
+              <span>Medical · FDA / IEC</span>
+              <span>End-to-end prototype</span>
+              <span>CAM &amp; CNC</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="Design_Portfolio-Michael_Murray.pdf#page=13" target="_blank" rel="noopener" aria-label="Remote Switchgear Racking Device — view in design portfolio (PDF page 13)">
+            <div class="work-media">
+              <img src="images/rack.png" alt="Remote switchgear racking device with PLC controller and latching box" loading="lazy">
+            </div>
+            <div class="work-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Remote Switchgear Racking Device</h3>
+            <p>Electric remote racking device that keeps technicians out of arc-flash range while racking medium-voltage circuit breakers. Sub-2-minute connect-to-disconnect cycle, &lt; 45 lb lift, &lt; $3K BOM. Design, PLC programming, prototype, supplier work, and manufacturing handoff.</p>
+            <div class="work-tags">
+              <span>Patented · US 9,876,335 / 8,654,513</span>
+              <span>PLC / motor control</span>
+              <span>Industrial power</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="Design_Portfolio-Michael_Murray.pdf#page=19" target="_blank" rel="noopener" aria-label="Centrifugal Air Compressor Dual Oil Cooler — view in design portfolio (PDF page 19)">
+            <div class="work-media">
+              <img src="images/compressor-a.png" alt="Centrifugal air compressor with dual oil cooler system — labeled subassemblies" loading="lazy">
+            </div>
+            <div class="work-icon"><i class="fa-solid fa-wind"></i></div>
+            <h3>Centrifugal Air Compressor — Dual Oil Cooler</h3>
+            <p>Designed a dual-cooler system for 5,000 cfm centrifugal air compressors so the machine keeps running during cooler service. Identified coolers, valves, and hardware; laid out the full compressor model; designed tubing, brackets, and integrated the lube-oil pumps and water manifold.</p>
+            <div class="work-tags">
+              <span>Industrial · ANSI / ISO</span>
+              <span>System integration</span>
+              <span>Manufacturing support</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="Design_Portfolio-Michael_Murray.pdf#page=10" target="_blank" rel="noopener" aria-label="Robotic Endoscope — Injection-Molded Parts — view in design portfolio (PDF page 10)">
+            <div class="work-media">
+              <img src="images/endoscope.png" alt="Robotic endoscope assembly with transparent housing revealing internal pulley-driven mechanism and camera" loading="lazy">
+            </div>
+            <div class="work-icon"><i class="fa-solid fa-cubes"></i></div>
+            <h3>Robotic Endoscope — Injection-Molded Parts</h3>
+            <p>Sterilized plastic parts in a pulley-driven push-pull cable system for a surgical robotic endoscope. Took the 3D-printed prototype geometry and redesigned it for injection molding alongside industrial design direction. Worked with an overseas contract manufacturer to ensure moldability and quality.</p>
+            <div class="work-tags">
+              <span>Medical · DFM</span>
+              <span>Injection molding</span>
+              <span>Industrial design</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Documents -->
+    <section id="documents" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h2>Documents</h2>
+          <p class="section-sub">Everything in one place — résumé, full portfolio, manufacturing experience, career timeline, and a longer-form bio.</p>
+        </div>
+
+        <div class="doc-grid">
+
+          <a class="doc-card" href="Resume-Michael_Murray.pdf" target="_blank">
+            <div class="doc-icon"><i class="fa-solid fa-file-lines"></i></div>
+            <h3>Resume</h3>
+            <p>One-page summary of roles, accomplishments, and technical skills across Nevados, Swope, True Digital Surgery, Surround Medical, ABB, Ingersoll Rand, Sandvik, and Newell.</p>
+            <span class="doc-cta">Open PDF <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <a class="doc-card" href="Design_Portfolio-Michael_Murray.pdf" target="_blank">
+            <div class="doc-icon"><i class="fa-solid fa-folder-open"></i></div>
+            <h3>Design Portfolio</h3>
+            <p>Sixteen project case studies — summaries, requirements, my role, and visuals. Spans medical devices, industrial power, automation, and personal maker work.</p>
+            <span class="doc-cta">Open PDF <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <a class="doc-card" href="Manufacturing_Processes-Michael_Murray.pdf" target="_blank">
+            <div class="doc-icon"><i class="fa-solid fa-industry"></i></div>
+            <h3>Manufacturing Experience</h3>
+            <p>Catalog of manufacturing processes I've personally performed, designed for, or witnessed in production — CNC, injection molding, sheet metal, 3D printing (FDM/SLA/SLS/DMLS), welding, EDM, and more.</p>
+            <span class="doc-cta">Open PDF <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <a class="doc-card" href="Timeline-Michael_Murray.pdf" target="_blank">
+            <div class="doc-icon"><i class="fa-solid fa-timeline"></i></div>
+            <h3>Career Timeline</h3>
+            <p>Context for each role and transition — what I worked on, why I moved, and what I took away. Useful background for anyone reviewing my work history.</p>
+            <span class="doc-cta">Open PDF <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <a class="doc-card doc-card-wide" href="About_Me-Michael_Murray.pdf" target="_blank">
+            <div class="doc-icon"><i class="fa-solid fa-user"></i></div>
+            <h3>About Me — Longer Form</h3>
+            <p>The non-résumé version: how I got into engineering, what drives me, the industries I've worked across, life in California, and the side projects (3D printing, music, comedy, and the occasional coffee roaster) that keep me building outside of work.</p>
+            <span class="doc-cta">Open PDF <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2>Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3><i class="fa-solid fa-pen-ruler"></i> CAD &amp; Modeling</h3>
+            <ul>
+              <li>SOLIDWORKS <span>16 yrs</span></li>
+              <li>Creo Parametric / Pro/E</li>
+              <li>NX, Inventor, Onshape, Fusion</li>
+              <li>SOLIDWORKS PDM, Arena, Windchill</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><i class="fa-solid fa-chart-line"></i> Analysis</h3>
+            <ul>
+              <li>FEA — SOLIDWORKS Simulation <span>9 yrs</span></li>
+              <li>Thermal &amp; Flow Simulation</li>
+              <li>Modal analysis</li>
+              <li>FMEA / DFMEA</li>
+              <li>GD&amp;T — ASME Y14.5</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><i class="fa-solid fa-gears"></i> Design for Manufacturing</h3>
+            <ul>
+              <li>DFM / DFA / DFx <span>15 yrs</span></li>
+              <li>Injection molding (incl. tooling)</li>
+              <li>Sheet metal — bending, stamping, roll-forming</li>
+              <li>Die &amp; investment casting</li>
+              <li>CAM — HSMWorks, NX</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Prototyping &amp; Hands-on</h3>
+            <ul>
+              <li>CNC milling, turning, grinding (program &amp; run)</li>
+              <li>Manual mill / lathe, welding</li>
+              <li>3D printing — FDM, SLA, SLS, DMLS</li>
+              <li>Silicone molding, wire EDM</li>
+              <li>CMM &amp; inspection</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><i class="fa-solid fa-shield-halved"></i> Regulatory &amp; Standards</h3>
+            <ul>
+              <li>FDA &mdash; 510(k) co-author</li>
+              <li>IEC 60601</li>
+              <li>ISO 13485</li>
+              <li>ANSI, ASME, UL</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><i class="fa-solid fa-users-gear"></i> Leadership &amp; PM</h3>
+            <ul>
+              <li>Cross-functional team leadership</li>
+              <li>Mentoring junior engineers</li>
+              <li>Vendor management (domestic &amp; overseas CMs)</li>
+              <li>Jira, Confluence, Agile</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">05</span>
+          <h2>Get in touch</h2>
+          <p class="section-sub">Best reached by email or LinkedIn. Happy to talk shop about mechanism design, medical-device development, DFM trade-offs, or anything in the portfolio.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:mjm.murray@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">mjm.murray@gmail.com</div>
+            </div>
+          </a>
+          <a class="contact-card" href="https://linkedin.com/in/michaeljohnmurray" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">michaeljohnmurray</div>
+            </div>
+          </a>
+          <a class="contact-card" href="tel:+19198241597">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+1 (919) 824-1597</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="brand-mark">MM</span>
+        <span>Michael Murray &mdash; Senior Mechanical Design Engineer</span>
+      </div>
+      <div class="footer-meta">
+        <span>San Francisco, CA</span>
+        <span>&copy; 2026</span>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // Close menu when clicking a link (mobile)
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+    // Subtle scroll effect on nav
+    const nav = document.querySelector('.nav');
+    const onScroll = () => {
+      if (window.scrollY > 8) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+
 </body>
 </html>
