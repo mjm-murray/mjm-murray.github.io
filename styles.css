@@ -665,14 +665,14 @@ a:hover { color: var(--accent-hover); }
   color: var(--text-faint);
   letter-spacing: 0.02em;
 }
-.avail-toggle {
+.avail-tz {
   display: inline-flex;
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 3px;
   background: var(--bg-elev-1);
 }
-.avail-toggle button {
+.avail-tz button {
   font: 500 13px var(--font-sans);
   color: var(--text-muted);
   background: none;
@@ -681,7 +681,7 @@ a:hover { color: var(--accent-hover); }
   padding: 6px 14px;
   cursor: pointer;
 }
-.avail-toggle button[aria-pressed="true"] {
+.avail-tz button[aria-pressed="true"] {
   background: var(--accent-soft);
   color: var(--accent);
 }
@@ -716,6 +716,12 @@ a:hover { color: var(--accent-hover); }
   border: 1px solid var(--accent-line);
   border-radius: var(--radius-sm);
   padding: 7px 10px;
+  transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.avail-slot:hover {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: var(--accent);
+  color: var(--accent-hover);
 }
 .avail-booked {
   font-size: 13px;

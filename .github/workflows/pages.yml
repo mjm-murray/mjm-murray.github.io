@@ -39,7 +39,7 @@ jobs:
           CALENDAR_ICS_URLS: ${{ secrets.CALENDAR_ICS_URLS }}
           AVAIL_PADDING_MIN: "15"
           AVAIL_MIN_SLOT_MIN: "30"
-          AVAIL_DAYS_AHEAD: "6"
+          AVAIL_DAYS_AHEAD: "14"
         run: python scripts/availability.py _site/availability.json
 
       - uses: actions/configure-pages@v5

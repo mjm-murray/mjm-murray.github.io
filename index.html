@@ -354,12 +354,12 @@
         <div class="section-head">
           <span class="section-num">05</span>
           <h2>Availability</h2>
-          <p class="section-sub">Open windows for a call over the next week, weekdays 9&nbsp;AM&ndash;5&nbsp;PM Pacific, pulled from my calendar automatically.</p>
+          <p class="section-sub">Open windows for a call over the next two weeks, weekdays 9&nbsp;AM&ndash;5&nbsp;PM Pacific, pulled from my calendar automatically. Pick a window to send me a request by email.</p>
         </div>
 
         <div class="avail-toolbar" hidden>
           <span class="avail-updated"></span>
-          <div class="avail-toggle avail-tz" role="group" aria-label="Time zone">
+          <div class="avail-tz" role="group" aria-label="Time zone">
             <button type="button" data-tz="pacific" aria-pressed="true">Pacific</button>
             <button type="button" data-tz="local" aria-pressed="false">Your time</button>
           </div>
@@ -451,7 +451,7 @@
       const tzGroup = toolbar.querySelector('.avail-tz');
       const pacific = 'America/Los_Angeles';
       const local = Intl.DateTimeFormat().resolvedOptions().timeZone;
-      const fallback = (msg) => { grid.innerHTML = `<p class="avail-empty">${msg}</p>`; };
+      const fallback = (msg) => { grid.innerHTML = `<p class="avail-empty">${msg} Email me and we'll find a time.</p>`; };
 
       let data;
       try {
@@ -475,7 +475,7 @@
 
       const render = (tz) => {
         toolbar.querySelector('.avail-updated').textContent = `Updated ${updated} · times in ${tzLabel(tz)}`;
-        if (!data.days.some(d => d.slots.length)) return fallback('No open windows in the next week.');
+        if (!data.days.some(d => d.slots.length)) return fallback('No open windows in the next two weeks.');
         grid.innerHTML = '';
         for (const day of data.days) {
           const card = document.createElement('div');
@@ -487,10 +487,13 @@
             const start = new Date(slot.start), end = new Date(slot.end);
             // Flag the weekday when the viewer's local date differs from the Pacific date.
             const shift = dayKey(start, tz) !== day.date;
-            const span = document.createElement('span');
-            span.className = 'avail-slot';
-            span.textContent = `${fmtTime(start, tz, shift)} – ${fmtTime(end, tz, shift)}`;
-            list.appendChild(span);
+            const pt = `${fmtDay(day.date)}, ${fmtTime(start, pacific)} – ${fmtTime(end, pacific)} ${tzLabel(pacific)}`;
+            const a = document.createElement('a');
+            a.className = 'avail-slot';
+            a.href = `mailto:mjm.murray@gmail.com?subject=${encodeURIComponent('Meeting request — ' + pt)}`;
+            a.title = `Request a meeting: ${pt}`;
+            a.textContent = `${fmtTime(start, tz, shift)} – ${fmtTime(end, tz, shift)}`;
+            list.appendChild(a);
           }
           grid.appendChild(card);
         }
