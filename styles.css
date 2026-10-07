@@ -648,92 +648,6 @@ a:hover { color: var(--accent-hover); }
 }
 
 /* =====================================================
-   Availability
-   ===================================================== */
-.avail-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-.avail-toolbar[hidden], .avail-tz[hidden] { display: none; }
-.avail-updated {
-  font-family: var(--font-mono);
-  font-size: 12.5px;
-  color: var(--text-faint);
-  letter-spacing: 0.02em;
-}
-.avail-tz {
-  display: inline-flex;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 3px;
-  background: var(--bg-elev-1);
-}
-.avail-tz button {
-  font: 500 13px var(--font-sans);
-  color: var(--text-muted);
-  background: none;
-  border: 0;
-  border-radius: 999px;
-  padding: 6px 14px;
-  cursor: pointer;
-}
-.avail-tz button[aria-pressed="true"] {
-  background: var(--accent-soft);
-  color: var(--accent);
-}
-.avail-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
-}
-.avail-day {
-  background: var(--bg-elev-2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px 16px;
-}
-.avail-day h3 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin: 0 0 12px;
-  color: var(--text);
-}
-.avail-slots {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.avail-slot {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 12.5px;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border: 1px solid var(--accent-line);
-  border-radius: var(--radius-sm);
-  padding: 7px 10px;
-  transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
-}
-.avail-slot:hover {
-  background: rgba(245, 158, 11, 0.2);
-  border-color: var(--accent);
-  color: var(--accent-hover);
-}
-.avail-booked {
-  font-size: 13px;
-  color: var(--text-faint);
-}
-.avail-empty {
-  grid-column: 1 / -1;
-  color: var(--text-muted);
-  margin: 0;
-}
-
-/* =====================================================
    Contact
    ===================================================== */
 .contact-grid {
@@ -822,11 +736,6 @@ a:hover { color: var(--accent-hover); }
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
   .work-grid { grid-template-columns: repeat(2, 1fr); }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
-  .avail-grid { grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (max-width: 560px) {
-  .avail-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
