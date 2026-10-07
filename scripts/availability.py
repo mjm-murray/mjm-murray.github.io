@@ -18,7 +18,7 @@ import requests
 TZ = ZoneInfo(os.environ.get("AVAIL_TZ", "America/Los_Angeles"))
 PADDING = dt.timedelta(minutes=int(os.environ.get("AVAIL_PADDING_MIN", "15")))
 MIN_SLOT = dt.timedelta(minutes=int(os.environ.get("AVAIL_MIN_SLOT_MIN", "30")))
-DAYS_AHEAD = int(os.environ.get("AVAIL_DAYS_AHEAD", "14"))
+DAYS_AHEAD = int(os.environ.get("AVAIL_DAYS_AHEAD", "6"))
 DAY_START = dt.time(9, 0)
 DAY_END = dt.time(17, 0)
 ROUND_TO = dt.timedelta(minutes=15)
